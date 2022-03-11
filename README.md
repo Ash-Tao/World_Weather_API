@@ -1,23 +1,17 @@
 # python_api_challenge
 
-## Background
+## Task 1: WeatherPy
+Visualize the weather of 500+ cities of varying distance from the equator.<br/>
+Tools: *[simple Python library](https://pypi.python.org/pypi/citipy)*, *[OpenWeatherMap API](https://openweathermap.org/api)*.
+### Targets
+- Create a series of scatter plots to showcase the following relationships:
+  * Temperature (F) vs. Latitude
+  * Humidity (%) vs. Latitude
+  * Cloudiness (%) vs. Latitude
+  * Wind Speed (mph) vs. Latitude
+  After each plot, add a sentence or two explaining what the code is analyzing.
 
-
-## Part 1: WeatherPy
-
-In this section, you'll create a Python script to visualize the weather of 500+ cities of varying distance from the equator. To do so, you'll use a [simple Python library](https://pypi.python.org/pypi/citipy), the [OpenWeatherMap API](https://openweathermap.org/api), and your problem-solving skills to create a representative model of weather across cities.
-
-The first requirement is to create a series of scatter plots to showcase the following relationships:
-
-* Temperature (F) vs. Latitude
-* Humidity (%) vs. Latitude
-* Cloudiness (%) vs. Latitude
-* Wind Speed (mph) vs. Latitude
-
-After each plot, add a sentence or two explaining what the code is analyzing.
-
-The second requirement is to compute the linear regression for each relationship. This time, separate the plots into Northern Hemisphere (greater than or equal to 0 degrees latitude) and Southern Hemisphere (less than 0 degrees latitude):
-
+Create separate plots -linear regression into Northern Hemisphere(0 to 90)  and Southern Hemisphere(-90 to 0) :
 * Northern Hemisphere - Temperature (F) vs. Latitude
 * Southern Hemisphere - Temperature (F) vs. Latitude
 * Northern Hemisphere - Humidity (%) vs. Latitude
@@ -26,15 +20,9 @@ The second requirement is to compute the linear regression for each relationship
 * Southern Hemisphere - Cloudiness (%) vs. Latitude
 * Northern Hemisphere - Wind Speed (mph) vs. Latitude
 * Southern Hemisphere - Wind Speed (mph) vs. Latitude
+describe any relationships that you notice and any other findings you may have.
 
-After each pair of plots, explain what the linear regression is modeling. For example, describe any relationships that you notice and any other findings you may have.
 
-Your final notebook must:
-
-* Randomly select **at least** 500 unique (non-repeated) cities based on latitude and longitude.
-* Perform a weather check on each of the cities using a series of successive API calls.
-* Include a print log of each city as it's being processed, with the city number and city name.
-* Save a CSV of all retrieved data and a PNG image for each scatter plot.
 
 ### Part 2: VacationPy
 
