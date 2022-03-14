@@ -1,98 +1,76 @@
 # python_api_challenge
 
-## Task 1: WeatherPy
+### Task 1: WeatherPy 
 Visualize the weather of 500+ cities of varying distance from the equator.<br/>
-Tools: *[simple Python library](https://pypi.python.org/pypi/citipy)*, *[OpenWeatherMap API](https://openweathermap.org/api)*.
-### Targets
-- Create a series of scatter plots to showcase the following relationships:
-  * Temperature (F) vs. Latitude
-  * Humidity (%) vs. Latitude
-  * Cloudiness (%) vs. Latitude
-  * Wind Speed (mph) vs. Latitude
-  After each plot, add a sentence or two explaining what the code is analyzing.
+Output can be found [output_WeatherPy](https://github.com/Ash-Tao/python_api_challenge/tree/main/output_WeatherPy)<br/>
+- Create a series of scatter plots to showcase the following relationships:<br/>
+  * __Temperature (F) vs. Latitude__<br/>
+The equator has the highest temperature, and the temperature gradually decreases as it moves along the equator towards the earth's poles.<br/>
+  <img src="https://github.com/Ash-Tao/python_api_challenge/blob/main/output_WeatherPy/Latitude%20vs.%20Temperature%20(Max).png" width="500"><br/>
+  * __Humidity (%) vs. Latitude__<br/>
+There is no obvious correlation between the two variables.<br/>
+But, when the latitude is between 0 to 20, the humidity is the lowest.<br/>
+Afterwards, as the latitude moves to the sides, the humidity gradually increases.<br/>
+  <img src="https://github.com/Ash-Tao/python_api_challenge/blob/main/output_WeatherPy/Latitude%20vs.%20Humidity.png" width="500"><br/>
+  * __Cloudiness (%) vs. Latitude__<br/>
+There is no obvious correlation between the two variables.<br/>
+But cloud cover appears to be centered around 0% and 100%.<br/>
+And in the middle part, the plot has a certain concentration in the 20%, 40% and 75% parts.<br/>
+  <img src="https://github.com/Ash-Tao/python_api_challenge/blob/main/output_WeatherPy/Latitude%20vs.%20Cloudiness.png" width="500"><br/>
+  * __Wind Speed (mph) vs. Latitude__<br/>
+There is no obvious correlation between the two variables.<br/>
+But for most cities, they have wind speeds between 0-20 mph.<br/>
+  <img src="https://github.com/Ash-Tao/python_api_challenge/blob/main/output_WeatherPy/Latitude%20vs.%20Wind%20Speed.png" width="500"><br/>
 
-Create separate plots -linear regression into Northern Hemisphere(0 to 90)  and Southern Hemisphere(-90 to 0) :
-* Northern Hemisphere - Temperature (F) vs. Latitude
-* Southern Hemisphere - Temperature (F) vs. Latitude
-* Northern Hemisphere - Humidity (%) vs. Latitude
-* Southern Hemisphere - Humidity (%) vs. Latitude
-* Northern Hemisphere - Cloudiness (%) vs. Latitude
-* Southern Hemisphere - Cloudiness (%) vs. Latitude
-* Northern Hemisphere - Wind Speed (mph) vs. Latitude
-* Southern Hemisphere - Wind Speed (mph) vs. Latitude
-describe any relationships that you notice and any other findings you may have.
+- Create separate plots -linear regression into Northern Hemisphere(0 to 90)  and Southern Hemisphere(-90 to 0) :<br/>
+Related information for R-Value in Linear Regression.<br/>
+Typically:<br/>
+1.0 = |R| - Perfect positive/negative correlation<br/>
+0.8 <= |R| < 1.0 - Very strong positive/negative correlated.<br/>
+0.6 <= |R| < 0.8 - Strong positive/negative correlated.<br/>
+0.4 <= |R| < 0.6 - Moderate positive/negative correlated.<br/>
+0.2 <= |R| < 0.4 - Weak positive/negative correlated.<br/>
+0.0 < |R| < 0.2 - Very weak positive/negative correlated.<br/>
+0.0 = |R| - No correlated.<br/>
+  * __Northern Hemisphere - Temperature (F) vs. Latitude__<br/>
+The R-value between these two variables is -0.89, which means that there is a very strong negative correlation between Max Temp Latitude in the Northern Hemisphere.<br/>
+  <img src="https://github.com/Ash-Tao/python_api_challenge/blob/main/output_WeatherPy/Northern%20Hemisphere%20-%20Max%20Temp%20vs.%20Latitude%20Linear%20Regression.png" width="500"><br/>
+  * __Southern Hemisphere - Temperature (F) vs. Latitude__<br/>
+The R-value between these two variables is 0.50, which means that there is a moderate positive correlation between Max Temp and Latitude in the Southern Hemisphere.<br/>
+  <img src="https://github.com/Ash-Tao/python_api_challenge/blob/main/output_WeatherPy/Southern%20Hemisphere%20-%20Max%20Temp%20vs.%20Latitude%20Linear%20Regression.png" width="500"><br/>
+  * __Northern Hemisphere - Humidity (%) vs. Latitude__<br/>
+The R-value between these two variables is 0.30, which means that there is a weak positive correlation between Humidity and Latitude in the Northern Hemisphere.<br/>
+  <img src="https://github.com/Ash-Tao/python_api_challenge/blob/main/output_WeatherPy/Northern%20Hemisphere%20-%20Humidity%20(%25)%20vs.%20Latitude%20Linear%20Regression.png" width="500"><br/>
+  * __Southern Hemisphere - Humidity (%) vs. Latitude__<br/>
+The R-value between these two variables is 0.36, which means a weak positive correlation between Humidity and Latitude in the Southern Hemisphere. And it is even weaker in Southern Hemisphere than it is in Northern Hemisphere.<br/>
+  <img src="https://github.com/Ash-Tao/python_api_challenge/blob/main/output_WeatherPy/Southern%20Hemisphere%20-%20Humidity%20(%25)%20vs.%20Latitude%20Linear%20Regression.png" width="500"><br/>
+  * __Northern Hemisphere - Cloudiness (%) vs. Latitude__<br/>
+The R-value between these two variables is 0.17, which means that there is a very weak positive correlation between Cloudiness and Latitude in the Northern Hemisphere.<br/>
+  <img src="https://github.com/Ash-Tao/python_api_challenge/blob/main/output_WeatherPy/Northern%20Hemisphere%20-%20Cloudiness%20(%25)%20vs.%20Latitude%20Linear%20Regression.png" width="500"><br/>
+  * __Southern Hemisphere - Cloudiness (%) vs. Latitude__<br/>
+The R-value between these two variables is 0.35, which means that there is a weak positive correlation between Cloudiness and Latitude in the Southern Hemisphere. And it is stronger in Southern Hemisphere than it is in Northern Hemisphere.<br/>
+  <img src="https://github.com/Ash-Tao/python_api_challenge/blob/main/output_WeatherPy/Sorthern%20Hemisphere%20-%20Cloudiness%20(%25)%20vs.%20Latitude%20Linear%20Regression.png" width="500"><br/>
+  * __Northern Hemisphere - Wind Speed (mph) vs. Latitude__<br/>
+The R-value between these two variables is 0.11, which means that there is a very weak positive correlation between Wind Speed and Latitude in the Northern Hemisphere.<br/>
+  <img src="https://github.com/Ash-Tao/python_api_challenge/blob/main/output_WeatherPy/Northern%20Hemisphere%20-%20Wind%20Speed%20(mph)%20vs.%20Latitude%20Linear%20Regression.png" width="500"><br/>
+  * __Southern Hemisphere - Wind Speed (mph) vs. Latitude__<br/>
+The R-value between these two variables is -0.39, which means that there is a weak negative correlation between Wind Speed and Latitude in the Southern Hemisphere. And it is stronger in Southern Hemisphere than it is in Northern Hemisphere. But the linear regression goes to the opposite direction, negative instead of positive.<br/>
+  <img src="https://github.com/Ash-Tao/python_api_challenge/blob/main/output_WeatherPy/Southern%20Hemisphere%20-%20Wind%20Speed%20(mph)%20vs.%20Latitude%20Linear%20Regression.png" width="500"><br/>
 
 
-
-### Part 2: VacationPy
-
-Now, let's use your skills working with weather data to plan future vacations. Use Jupyter-gmaps and the Google Places API for this part of the assignment.
-
-* **Note:** Remember that any API usage beyond the $200 credit will be charged to your personal account. You can set quotas and limits to your daily requests to be sure you can't be charged. Check out [Google Maps Platform Billing](https://developers.google.com/maps/billing/gmp-billing#monitor-and-restrict-consumption) and [Manage your cost of use](https://developers.google.com/maps/documentation/javascript/usage-and-billing#set-caps) for more information.
-
-* **Note:** If you are having trouble displaying the maps, run `jupyter nbextension enable --py gmaps` in your environment and then retry.
-
-To complete this part of the assignment, you will need to do the following:
-
-* Create a heat map that displays the humidity for every city from Part 1, as in the following image:
-
-  ![heatmap](Images/heatmap.png)
-
-* Narrow down the DataFrame to find your ideal weather condition. For example:
-
+### Task 2: VacationPy
+Create a heatmap showing the humidity for each city in Task 1. Mark several hotel locations on this heatmap.<br/>
+Output can be found [output_VacationPy](https://github.com/Ash-Tao/python_api_challenge/tree/main/output_VacationPy)<br/>
+* Create a heatmap showing the humidity of the reduced DataFrame from Part 1 after filtering cities based on certain criteria.<br/>
+<img src="https://github.com/Ash-Tao/python_api_challenge/blob/main/output_VacationPy/Heat%20Map.png" width="600"><br/>
   * A max temperature lower than 80 degrees but higher than 70.
-
   * Wind speed less than 10 mph.
-
   * Zero cloudiness.
-
   * Drop any rows that don't satisfy all three conditions. You want to be sure the weather is ideal.
 
-  * **Note:** Feel free to adjust your specifications, but make sure to limit the number of rows returned by your API requests to a reasonable number.
-
 * Use Google Places API to find the first hotel for each city located within 5,000 meters of your coordinates.
+Plot the hotels on top of the humidity heatmap, with each pin containing the **Hotel Name**, **City**, and **Country**。
+<img src="https://github.com/Ash-Tao/python_api_challenge/blob/main/output_VacationPy/Heat%20Map%20with%20Hotel.png" width="600"><br/>
 
-* Plot the hotels on top of the humidity heatmap, with each pin containing the **Hotel Name**, **City**, and **Country**, as in the following image:
-
-  ![hotel map](Images/hotel_map.png)
-
-As final considerations:
-
-* You must complete your analysis using a Jupyter notebook.
-* You must use the Matplotlib or Pandas plotting libraries.
-* For Part 1, you must include a written description of three observable trends based on the data.
-* For Part 2, you must take a screenshot of the heatmap that you create and include it in your submission.
-* Your plots must include labeling aspects like plot title (with date of analysis) and axis labels.
-* For max intensity in the heatmap, try setting it to the highest humidity found in the dataset.
-
-## Hints and Considerations
-
-* The city data that you generate is based on random coordinates and different query times, so your outputs will not be an exact match to the provided starter notebook.
-
-* If you'd like a refresher on the geographic coordinate system, [this site](http://desktop.arcgis.com/en/arcmap/10.3/guide-books/map-projections/about-geographic-coordinate-systems.htm) has great information.
-
-* Next, take some time to study the OpenWeatherMap API. Based on your initial study, you should be able to answer basic questions about the API: Where do you request the API key? Which Weather API in particular will you need? What URL endpoints does it expect? What JSON structure does it respond with? Before you write a line of code, you should have a crystal-clear understanding of your intended outcome.
-
-* A starter code for citipy has been provided. However, if you're craving an extra challenge, push yourself to learn how it works: [citipy Python library](https://pypi.python.org/pypi/citipy). Before you try to incorporate the library in your analysis, start with simple test cases outside your main script to confirm that you are using it correctly. Often, when introduced to a new library, students will spend hours trying to figure out errors in their code&mdash;a simple test case can save you a lot of time and frustration.
-
-* You will need to apply your critical thinking skills to understand how and why we're recommending the tools we are. What is citipy used for? Why would you use it in conjunction with the OpenWeatherMap API? How would you do so?
-
-* While building your script, pay attention to the cities you are using in your query pool. Are you covering the full range of latitudes and longitudes? Or are you choosing 500 cities from one region of the world? Even if you were a geography genius, simply listing 500 cities based on your personal selection would create a biased dataset. Try to think of ways that you can counter this. 
-
-  * **Hint:** Consider the full range of latitudes.
-
-* Once you have computed the linear regression for one relationship, you will follow a similar process for all other charts. As a bonus, try to create a function that will create these charts based on different parameters.
-
-* Remember that each coordinate will trigger a separate call to the Google API. If you're creating your own criteria to plan your vacation, try to reduce the results in your DataFrame to 10 or fewer cities.
-
-* Ensure your repository has regular commits and a thorough README.md file.
-
-* Lastly, remember that this is a challenging activity. Push yourself! If you complete this task, you can safely say that you've gained a strong understanding of the core foundations of data analytics, and it will only get better from here. Good luck!
-
-## Rubric
-
-[Unit 6 Homework Rubric](https://docs.google.com/document/d/1Y17QYjs0KMeEPPGd_1BpMjnqXiTaJVeFwqea5ReMdeU/edit?usp=sharing)
-
-- - -
-
-© 2022 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+* **Hint:** Consider the full range of latitudes.
+Since the number of cities in the northern and southern hemispheres is different, in order to get an equal amount of cities as possible in both hemispheres. I used a loop to control the number of cities in the stage of getting city list, 270 for both hemispheres.
