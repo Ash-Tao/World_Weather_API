@@ -33,28 +33,20 @@ Typically:<br/>
 0.0 < |R| < 0.2 - Very weak positive/negative correlated.<br/>
 0.0 = |R| - No correlated.<br/>
   * __Northern Hemisphere - Temperature (F) vs. Latitude__<br/>
-The R-value between these two variables is -0.89, which means that there is a very strong negative correlation between Max Temp Latitude in the Northern Hemisphere.<br/>
   <img src="https://github.com/Ash-Tao/python_api_challenge/blob/main/output_WeatherPy/Northern%20Hemisphere%20-%20Max%20Temp%20vs.%20Latitude%20Linear%20Regression.png" width="500"><br/>
   * __Southern Hemisphere - Temperature (F) vs. Latitude__<br/>
-The R-value between these two variables is 0.50, which means that there is a moderate positive correlation between Max Temp and Latitude in the Southern Hemisphere.<br/>
   <img src="https://github.com/Ash-Tao/python_api_challenge/blob/main/output_WeatherPy/Southern%20Hemisphere%20-%20Max%20Temp%20vs.%20Latitude%20Linear%20Regression.png" width="500"><br/>
   * __Northern Hemisphere - Humidity (%) vs. Latitude__<br/>
-The R-value between these two variables is 0.30, which means that there is a weak positive correlation between Humidity and Latitude in the Northern Hemisphere.<br/>
   <img src="https://github.com/Ash-Tao/python_api_challenge/blob/main/output_WeatherPy/Northern%20Hemisphere%20-%20Humidity%20(%25)%20vs.%20Latitude%20Linear%20Regression.png" width="500"><br/>
   * __Southern Hemisphere - Humidity (%) vs. Latitude__<br/>
-The R-value between these two variables is 0.36, which means a weak positive correlation between Humidity and Latitude in the Southern Hemisphere. And it is even weaker in Southern Hemisphere than it is in Northern Hemisphere.<br/>
   <img src="https://github.com/Ash-Tao/python_api_challenge/blob/main/output_WeatherPy/Southern%20Hemisphere%20-%20Humidity%20(%25)%20vs.%20Latitude%20Linear%20Regression.png" width="500"><br/>
   * __Northern Hemisphere - Cloudiness (%) vs. Latitude__<br/>
-The R-value between these two variables is 0.17, which means that there is a very weak positive correlation between Cloudiness and Latitude in the Northern Hemisphere.<br/>
   <img src="https://github.com/Ash-Tao/python_api_challenge/blob/main/output_WeatherPy/Northern%20Hemisphere%20-%20Cloudiness%20(%25)%20vs.%20Latitude%20Linear%20Regression.png" width="500"><br/>
   * __Southern Hemisphere - Cloudiness (%) vs. Latitude__<br/>
-The R-value between these two variables is 0.35, which means that there is a weak positive correlation between Cloudiness and Latitude in the Southern Hemisphere. And it is stronger in Southern Hemisphere than it is in Northern Hemisphere.<br/>
   <img src="https://github.com/Ash-Tao/python_api_challenge/blob/main/output_WeatherPy/Sorthern%20Hemisphere%20-%20Cloudiness%20(%25)%20vs.%20Latitude%20Linear%20Regression.png" width="500"><br/>
   * __Northern Hemisphere - Wind Speed (mph) vs. Latitude__<br/>
-The R-value between these two variables is 0.11, which means that there is a very weak positive correlation between Wind Speed and Latitude in the Northern Hemisphere.<br/>
   <img src="https://github.com/Ash-Tao/python_api_challenge/blob/main/output_WeatherPy/Northern%20Hemisphere%20-%20Wind%20Speed%20(mph)%20vs.%20Latitude%20Linear%20Regression.png" width="500"><br/>
   * __Southern Hemisphere - Wind Speed (mph) vs. Latitude__<br/>
-The R-value between these two variables is -0.39, which means that there is a weak negative correlation between Wind Speed and Latitude in the Southern Hemisphere. And it is stronger in Southern Hemisphere than it is in Northern Hemisphere. But the linear regression goes to the opposite direction, negative instead of positive.<br/>
   <img src="https://github.com/Ash-Tao/python_api_challenge/blob/main/output_WeatherPy/Southern%20Hemisphere%20-%20Wind%20Speed%20(mph)%20vs.%20Latitude%20Linear%20Regression.png" width="500"><br/>
 
 
