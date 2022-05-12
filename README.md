@@ -1,4 +1,4 @@
-# python_api_challenge
+# World_Weather_API
 
 ### Task 1: WeatherPy 
 Visualize the weather of 500+ cities of varying distance from the equator.<br/>
